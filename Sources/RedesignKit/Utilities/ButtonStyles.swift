@@ -7,6 +7,25 @@
 
 import SwiftUI
 
+/// A custom button style that applies a neumorphic effect using the specified shape and color.
+///
+/// This button style creates a soft, tactile effect:
+/// - When the button is **not pressed**, it uses `.out` style (raised).
+/// - When the button **is pressed**, it uses `.reverse` style (pressed in).
+///
+/// This makes it ideal for neumorphic UI designs where the button visually responds to interaction.
+///
+/// ### Example
+/// ```swift
+/// Button(action: {
+///     print("Tapped")
+/// }) {
+///     Image(systemName: "heart.fill")
+///         .foregroundStyle(.pink)
+///         .frame(width: 60, height: 60)
+/// }
+/// .buttonStyle(NeumorphicButtonStyle(shape: .circle, color: .gray))
+/// ```
 struct NeumorphicButtonStyle<S: Shape>: ButtonStyle {
     
     let shape: S

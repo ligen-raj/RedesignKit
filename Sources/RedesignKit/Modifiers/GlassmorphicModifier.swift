@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+/// A view modifier that applies a glassmorphic (frosted glass) visual effect to a shaped view.
+///
+/// This modifier uses ultra-thin material fill, background color overlay, gradient strokes,
+/// and subtle shadows to simulate a glass-like appearance.
 fileprivate struct GlassmorphicModifier<S: Shape>: ViewModifier {
     
     @Environment(\.colorScheme) private var colorScheme
@@ -45,6 +49,12 @@ fileprivate struct GlassmorphicModifier<S: Shape>: ViewModifier {
 
 extension View {
     
+    /// Applies a glassmorphic (frosted glass) effect to the current view using a specified shape.
+    ///
+    /// - Parameters:
+    ///   - shape: A `Shape` defining the bounds for the effect.
+    ///   - color: An optional tint `Color` blended into the background.
+    /// - Returns: A view modified with a glassmorphic appearance.
     func glassmorphism<S: Shape>(using shape: S, color: Color? = nil) -> some View {
         modifier(GlassmorphicModifier(shape: shape, color: color))
     }
