@@ -77,6 +77,4 @@ Button(action: {
 
 ## 📄 License
 
-RedesignKit is available under the MIT license. See the LICENSE file for more info.
-
-
+RedesignKit is available under the MIT license. See the [LICENSE](https://github.com/ligen-raj/RedesignKit/blob/master/LICENSE) file for more info.
