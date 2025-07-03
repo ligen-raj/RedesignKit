@@ -1,29 +1,82 @@
 # RedesignKit
-RedesignKit is a lightweight static iOS framework built with SwiftUI, designed to supercharge your UI with modern design styles like Neumorphism, Glassmorphism, Claymorphism, and more. It includes a collection of reusable SwiftUI view modifiers and button extensions, making it effortless to apply stunning design effects with minimal code.
+
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![iOS](https://img.shields.io/badge/iOS-15%2B-lightgrey)
+![License](https://img.shields.io/badge/license-MIT-green)
+
+**RedesignKit** is a lightweight static iOS framework built with SwiftUI, designed to supercharge your UI with modern design styles like Neumorphism, Glassmorphism, Claymorphism, and more. It includes a collection of reusable SwiftUI view modifiers and button extensions, making it effortless to apply stunning design effects with minimal code.
+
+---
 
 ## ✨ Features
 
-- Neumorphic, Glassmorphic & Claymorphic styles
-- Custom Button Modifiers
-- Clean, reusable View Modifiers
-- Built as a Static Framework for performance
+- 🧊 Neumorphic, Glassmorphic & Claymorphic styles
+- 🔘 Custom Button Modifiers
+- 🧱 Clean, reusable View Modifiers
+- ⚡ Built as a Static Framework for performance
+
+---
 
 ## 📦 Requirements
 
-- iOS 14+
+- iOS 15+
 - Swift 5.5+
 - SwiftUI
 
+---
+
+## 🧾 Version
+
+**Current Version:** `v1.0.0`  
+Check the [Releases](https://github.com/ligen-raj/RedesignKit/releases) for version history and updates.
+
+---
+
 ## 🚀 Installation
 
-Supports Swift Package Manager and static linking.
+### Swift Package Manager (SPM)
 
-## 🧪 Example
+You can install RedesignKit via Swift Package Manager by adding the following URL to your Xcode project:
+https://github.com/ligen-raj/RedesignKit.git
+
+1. In **Xcode**, go to `File` → `Add Packages...`
+2. Enter the repo URL: `https://github.com/ligen-raj/RedesignKit.git`
+3. Choose version `1.0.0` or `Up to Next Major Version`
+4. Click **Add Package**
+
+Import the framework where needed:
 
 ```swift
-Text("Hello")
-    .neumorphicStyle()
-
-Button("Tap Me") { }
-    .glassButtonStyle()
+import RedesignKit
 ```
+---
+
+## 🧪 Usage Example
+
+```swift
+Text("Get Started!!")
+    .fontWeight(.medium)
+    .foregroundStyle(.white)
+    .padding(.horizontal)
+    .padding()
+    .claymorphism(using: .capsule, color: .blue)
+
+Button(action: {
+    // Action
+}) {
+    Text("Reset All")
+        .foregroundStyle(.red)
+        .padding()
+        .neumorphism(using: .capsule, color: .gray, style: .in)
+}
+.buttonStyle(NeumorphicButtonStyle(shape: .capsule, color: .gray))
+
+```
+
+---
+
+## 📄 License
+
+RedesignKit is available under the MIT license. See the LICENSE file for more info.
+
+
