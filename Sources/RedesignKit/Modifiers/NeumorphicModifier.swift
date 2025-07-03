@@ -12,7 +12,7 @@ import SwiftUI
 /// - `in`: Creates an inset (inner) shadow effect, giving the appearance of a pressed element.
 /// - `out`: Creates an outset (outer) shadow effect, making the element appear raised.
 /// - `reverse`: Reverses the typical shadow direction, used for creative depth reversal.
-enum NeumorphicStyle {
+public enum NeumorphicStyle {
     case `in`, out, reverse
 }
 
@@ -61,7 +61,7 @@ extension View {
     ///   - color: The base background color to be styled.
     ///   - style: The `NeumorphicStyle` to apply (`in`, `out`, or `reverse`).
     /// - Returns: A view modified with a neumorphic appearance.
-    func neumorphism<S: Shape>(using shape: S, color: Color, style: NeumorphicStyle) -> some View {
+    public func neumorphism<S: Shape>(using shape: S, color: Color, style: NeumorphicStyle) -> some View {
         modifier(NeumorphicModifier(shape: shape, color: color, style: style))
     }
     

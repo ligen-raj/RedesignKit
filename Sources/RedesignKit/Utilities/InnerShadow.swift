@@ -12,7 +12,7 @@ import SwiftUI
 ///
 /// This modifier uses a combination of stroke, blur, and masking to create an illusion
 /// of a shadow cast inside the shape, useful for soft UI effects like neumorphism.
-struct InnerShadow<S: Shape>: ViewModifier {
+fileprivate struct InnerShadow<S: Shape>: ViewModifier {
     
     let shape: S
     let color: Color

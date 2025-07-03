@@ -26,12 +26,12 @@ import SwiftUI
 /// }
 /// .buttonStyle(NeumorphicButtonStyle(shape: .circle, color: .gray))
 /// ```
-struct NeumorphicButtonStyle<S: Shape>: ButtonStyle {
+public struct NeumorphicButtonStyle<S: Shape>: ButtonStyle {
     
     let shape: S
     let color: Color
     
-    func makeBody(configuration: Configuration) -> some View {
+    public func makeBody(configuration: Configuration) -> some View {
         configuration.label
             .neumorphism(using: shape, color: color, style: configuration.isPressed ? .reverse : .out)
     }

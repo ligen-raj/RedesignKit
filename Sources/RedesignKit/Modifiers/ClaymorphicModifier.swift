@@ -35,7 +35,7 @@ extension View {
     ///   - shape: A `Shape` to define the contour of the claymorphic background and shadows.
     ///   - color: A `Color` used as the base background and for shadow rendering.
     /// - Returns: A view modified with claymorphic styling.
-    func claymorphism<S: Shape>(using shape: S, color: Color) -> some View {
+    public func claymorphism<S: Shape>(using shape: S, color: Color) -> some View {
         modifier(ClaymorphicModifier(shape: shape, color: color))
     }
     

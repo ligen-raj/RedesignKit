@@ -55,7 +55,7 @@ extension View {
     ///   - shape: A `Shape` defining the bounds for the effect.
     ///   - color: An optional tint `Color` blended into the background.
     /// - Returns: A view modified with a glassmorphic appearance.
-    func glassmorphism<S: Shape>(using shape: S, color: Color? = nil) -> some View {
+    public func glassmorphism<S: Shape>(using shape: S, color: Color? = nil) -> some View {
         modifier(GlassmorphicModifier(shape: shape, color: color))
     }
     
