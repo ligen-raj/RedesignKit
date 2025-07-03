@@ -1,6 +1,6 @@
 # RedesignKit
 
-![Version](https://img.shields.io/badge/version-1.0.2-blue)
+![Version](https://img.shields.io/badge/version-1.0.3-blue)
 ![Platforms](https://img.shields.io/badge/Platforms-iOS%20%7C%20macOS%20%7C%20visionOS%20%7C%20tvOS%20%7C%20watchOS-blue)
 ![iOS](https://img.shields.io/badge/iOS-15%2B-lightgrey)
 ![License](https://img.shields.io/badge/license-MIT-green)
@@ -28,7 +28,7 @@
 
 ## 🧾 Version
 
-**Current Version:** `v1.0.2`  
+**Current Version:** `v1.0.3`  
 Check the [Releases](https://github.com/ligen-raj/RedesignKit/releases) for version history and updates.
 
 ---
@@ -42,7 +42,7 @@ https://github.com/ligen-raj/RedesignKit.git
 
 1. In **Xcode**, go to `File` → `Add Packages...`
 2. Enter the repo URL: `https://github.com/ligen-raj/RedesignKit.git`
-3. Choose version `1.0.2` or `Up to Next Major Version`
+3. Choose version `1.0.3` or `Up to Next Major Version`
 4. Click **Add Package**
 
 Import the framework where needed:
